@@ -17,7 +17,7 @@ public class DeliveryUIManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (driver == null)
+        if (driver != null)
         {
             //Event ±¸µ¶
             driver.driverEvents.OnMoveChanged.AddListener(UpdateMoney);
